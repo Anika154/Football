@@ -3,6 +3,8 @@
 /* common styles */
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 main{
     display: flex;
@@ -35,7 +37,7 @@ nav li a {
     
 }
 .login-button{
-    padding-right: 5%;
+    padding-right: 2%;
     background: #2D25A0;
 }
 /* navbar styles ends*/
@@ -74,7 +76,7 @@ h1 {
 .link-button {
     text-decoration: none; 
     background: #E02C6D;
-    padding: 10px 60px;
+    padding: 10px 30px;
     margin-top: 2%;
     color: white;
 }
@@ -247,3 +249,164 @@ footer i{
     color:gray;
 }
 /* footer styles starts*/
+
+/* media queries */
+
+/* mobile devices */
+@media only screen and (max-width:680px) {
+    .navbar{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        padding: 0;
+    }
+    .half-width{
+        padding: 0%;
+        width: 70%;
+    }
+    .half-width img{
+        width: 90%;
+        height: 80%;
+        margin-top: 10%;
+    }
+    .flexible-container{
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 35%;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        
+        flex-direction: column;
+    }
+    .player img{
+        padding-left: 10%;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .photo-album{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .photo img{   
+        padding-left: 30%;
+    }
+    .awards{
+        width: 100%;
+        height: 300px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .award .golden{
+        font-size: 22px;
+    }
+    .award{
+        width: 55%;
+        height: 75%;
+        padding: 4%;
+        margin-left: 13%;
+        margin-top: 5%;
+        
+    }
+    .award img{
+        padding: 0;
+    }
+    .media img{
+        width: 80%;
+    }
+}
+
+    
+/* tablet devices */
+
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .navbar{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        padding-right: 30%;
+    }
+    .half-width{
+        padding: 0%;
+        width: 100%;
+    }
+    .half-width img{
+        width: 90%;
+        height: 90%;
+        margin-top: 10%;
+    }
+    .flexible-container{
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 68%;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20%;
+        
+    }
+    .player{   
+        flex-direction: column; 
+    }
+    .player img{
+        padding-left: 3%;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .photo-album{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .photo img{   
+        padding-left: 30%;
+    }
+    .awards{
+        width: 100%;
+        height: 390px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 0%;
+    }
+    .award .golden{
+        font-size: 40px;
+        color:gold;
+    }
+    .award{
+        width: 75%;
+        height: 75%;
+        padding: 2%;
+        margin-left: 13%;
+        margin-top: 5%;
+        
+    }
+    .award img{
+        padding: 0;
+    }
+    .media img{
+        width: 80%;
+        padding-left: 15%;
+    }
+
+}
