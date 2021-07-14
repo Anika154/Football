@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* navbar styles start*/
+nav{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9%;
+    font-size: 18px;
+    font-weight: 500;
+    background: #2D25A0;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0%;
+}
+nav li {
+    list-style: none;
+    margin-right: 5px;
+    padding: 70px 40px;
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+    
+}
+.login-button{
+    padding-right: 5%;
+    background: #2D25A0;
+}
+/* navbar styles ends*/
+/* top-banner styles starts*/
+.flexible-container {
+    display: flex;
+    background: #2D25A0;
+    padding-bottom: 8%;
+    width: 100%;
+}
+h1 {
+    font-size: 64px;
+    font-weight: 900;
+    text-align: left;
+    color: white;
+}
+.half-width {
+    padding-left: 14%;
+    padding-right: 3%; 
+}
+.half-width i{
+    padding-left: 2%;
+}
+.half-width img {
+    width: 610px;
+    height: 520px;
+    padding-right: 20px;
+    top: 153px;
+}
+.top{
+    transition: transform .5s ease-in-out;   
+}
+.top:hover .half-width img{
+    transform: translate(-400px);   
+}
+.link-button {
+    text-decoration: none; 
+    background: #E02C6D;
+    padding: 10px 60px;
+    margin-top: 2%;
+    color: white;
+}
+/* top-banner styles ends*/
+/* top-players styles starts */
+.container{
+    background: #FFFFFF;
+    padding: 30px;
+    width: 870px;
+    margin-top: 25px;
+    border-radius: 5px; 
+}
+.player{
+    width: 100%;
+    padding: 15px 0px 15px 15px;
+    box-shadow: 5px 5px 40px gray;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    margin-bottom: 27px;
+}
+.player-title{
+    font-size: 24px;
+    text-align: left;  
+}
+.player-info{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 2%;
+}
+.player .player-banner img{
+    width: 290px;
+    height: 256px;
+}
+/* top-players styles ends */
+/* gallery section styles starts */
+.gallery{
+    margin-bottom: 7%;
+}
+.gallery h2{
+    font-size: 40px;
+    color: gray;
+    text-align: center;
+}
+.photo-album {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.photo-frame {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border: 2px solid white;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.photo-frame:hover .photo-detail {
+    display: block;
+    background-color: rgba(216, 196, 148, 0.7);
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photo-detail {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+
+.photo-detail h3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.photo-detail p {
+    color: white;
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.5) skew(-30deg);
+    transition: transform 2s ease-in-out;
+}
+/* gallery section styles ends */
+/* Awards Section Styles start*/
+.awards{
+    width: 80%;
+    height: 100px;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding-left: 6px;
+    padding-bottom: 120px;
+    box-shadow: 5px 5px 20px lightgrey;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: white;
+}
+.award{
+    box-shadow: 5px 5px 20px lightgrey;
+    width: 20%;
+    height: 30px;
+    border-radius: 30px;
+    margin: 2%;
+    padding-left: 2px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+.award .golden{
+    color: gold;
+    font-size: 55px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.awards h3{
+    color: gray;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.awards img{
+    width: 40px;
+    height: 50px;
+    border-radius: 20%;
+    padding: 15px 5px 5px 5px;
+}
+/* Awards Section Styles end*/
+/* Social section styles starts*/
+.social{
+    margin-bottom: 0%;
+}
+.media img{
+    width: 490px;
+    height: 130px;
+    padding-left: 5%;
+}
+.media ul{
+    display: flex;
+    justify-content: center;
+}
+.media li {
+    list-style: none;
+    margin-right: 20px;
+}
+.media li img{
+    width: 40px;
+    height: 40px;
+    
+}
+/* Social section styles ends*/
+/* footer styles starts*/
+footer{
+    font-size: 20px;
+    text-align: center;
+    
+}
+footer i{
+    color:gray;
+}
+/* footer styles starts*/
